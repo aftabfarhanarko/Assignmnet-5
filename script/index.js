@@ -1,10 +1,8 @@
-const trangtionsData = [];
 
 function hart(id) {
   let element = document.getElementById(id);
   let elementvalue = element.innerText;
   let elementIntegerConvart = parseInt(elementvalue);
-
   return elementIntegerConvart;
 }
 // hard-Ubdet-fire
@@ -59,39 +57,29 @@ let coneDisplay = document.getElementById('point-ofClick');
 coneDisplay.innerText = coins;
 
 //add all find element
-document.getElementById('alear').addEventListener('click', function (e) {
+document.getElementById('card-cointener').addEventListener('click', function (e) {
+   e.preventDefault();
+ if (e.target.className.includes("all-btn")) {
+     let cardes = e.target;
+      let findName = cardes.parentNode.parentNode.children[1].innerText;
+
+      let findNumbers = parseInt(
+        cardes.parentNode.parentNode.children[3].innerText
+      );
 
     if(coins >= 20){
-      let values = coins - 20;
-      coins.innerText = values
-      alert('📞 Calling Fire Service 102...')
+      coins = coins - 20;
+      coneDisplay.innerText = coins;
+      alert(` 📞 Calling ${findName} Service ${findNumbers}...` )
     }else{
       alert('❌আপনার বর্তমান কয়েন নেই কমপক্ষে কল করতে ২০ টি কয়েন লাগবে')
     }
+  }
 
-})
-document.getElementById('uational').addEventListener('click', function (e) {
-  alert('📞 Calling National Emergency Service 999...')
-})
-document.getElementById('polica').addEventListener('click', function (e) {
-  alert('📞 Calling Polic Service 999...')
-})
-document.getElementById('raliways').addEventListener('click', function (e) {
-  alert('📞 Calling Bangladesh Railway  Service 131...')
-})
-
-document.getElementById('brakcall').addEventListener('click', function (e) {
-  alert('📞 Calling BRAC Bank Service 16221...')
-})
-document.getElementById('amblounces').addEventListener('click', function (e) {
-  alert('📞 Calling Ambulance Service 123456...')
-})
+});
 
 
-
-
-
-// Add Deleagitions
+// Add Deleagitions With Cointener
 document
   .getElementById("card-cointener")
   .addEventListener("click", function (e) {
@@ -103,7 +91,6 @@ document
       let findNumbers = parseInt(
         cardes.parentNode.parentNode.children[3].innerText
       );
-      console.log(findName, findNumbers);
 
       // date time
       const data = {
@@ -115,7 +102,7 @@ document
       let addesNewDives = document.createElement("newaddesDiv");
 
       addesNewDives.innerHTML = ` 
-            <div class="flex justify-between items-center border-1 p-2 px-4 rounded-lg border-gray-200 bg-[#e8e6e6] mt-2 ">
+            <div class=" flex justify-between items-center border-1 p-2 px-4 rounded-lg border-gray-200 bg-[#e8e6e6] mt-2 ">
                         <div>
                             <h3 class="text-[16px] font-bold">${findName}</h3>
                             <p class="mt-2 text-[16px] font-bold">${findNumbers}</p>
