@@ -37,8 +37,8 @@
                     <h2 class="font-bold" id="point-ofClick"></h2>
                     <img class="w-[30px]" src="./assets/coin.png" alt="">
                 </div>
-                <div class="flex items-center bg-[#00a63e] rounded-full px-5">
-                    <h2 class="font-bold text-white  text-[18px]"><span id="">0</span> Copy</h2>
+                <div class="flex items-center bg-[#00a63e] rounded-full px-6">
+                    <h2 class="font-bold text-white  text-[15px]"><span id="counts0">0</span> Copy</h2>
                 </div>
             </div>
         </nav>
@@ -63,7 +63,7 @@
             <div id="card-cointener" class="col-span-10 mt-5 p-2 px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
 
                 <!-- Fire Service Card -->
-                <div id="fireCard" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg ">
+                <div id="fireCard" class="my-card border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg ">
                     <div class="flex items-center justify-between">
                         <div class=" rounded-lg p-2 bg-red-100">
                             <img class="w-[30px]" src="./assets/fire-service.png" alt="">
@@ -74,7 +74,7 @@
                     </div>
                     <h1 class="text-xl font-bold mt-3">Fire Service</h1>
                     <p class=" text-[15px] text-[#5c5c5c]">Fire Service</p>
-                    <h2 class="text-xl font-extrabold mt-3"> <span id="fireService-number">102</span> </h2>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="fireService-number" class="card-num">102</span> </h2>
 
                     <p
                         class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">
@@ -82,8 +82,9 @@
 
                     <div class=" flex gap-5">
                         <button id=""
-                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
+                            class="copy-btn text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
+
                         <button id="alear"
                             class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn">
                             <i class="ri-phone-line"></i> Call</button>
@@ -92,7 +93,7 @@
                 </div>
 
                 <!-- National Emergency Service card-->
-                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                <div id="card" class="my-card border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
                     <div class="flex items-center justify-between">
                         <div class=" rounded-lg p-2 bg-red-100">
                             <img class="w-[30px]" src="./assets/emergency.png" alt="">
@@ -103,7 +104,7 @@
                     </div>
                     <h1 class="text-xl font-bold mt-3">National Emergency Service </h1>
                     <p class=" text-[15px] text-[#5c5c5c]">National Emergency Service </p>
-                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number" class="card-num">999</span> </h2>
 
                     <p
                         class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">
@@ -111,7 +112,7 @@
 
                     <div class=" flex gap-5">
                         <button id=""
-                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
+                            class="copy-btn text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
                         <button id="uational"
                             class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
@@ -121,7 +122,7 @@
                 </div>
 
                 <!-- Police Hotline -->
-                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                <div id="card" class="my-card border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
                     <div class="flex items-center justify-between">
                         <div class=" rounded-lg p-2 bg-blue-100">
                             <img class="w-[30px]" src="./assets/police.png" alt="">
@@ -132,7 +133,7 @@
                     </div>
                     <h1 class="text-xl font-bold mt-3">Polic</h1>
                     <p class=" text-[15px] text-[#5c5c5c]">Polic</p>
-                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number" class="card-num">999</span> </h2>
 
                     <p
                         class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">
@@ -140,7 +141,7 @@
 
                     <div class=" flex gap-5">
                         <button id=""
-                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
+                            class="copy-btn text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
                         <button id="polica"
                             class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
@@ -150,7 +151,7 @@
                 </div>
 
                 <!-- Railway -->
-                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                <div id="card" class="my-card border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
                     <div class="flex items-center justify-between">
                         <div class=" rounded-lg p-2 bg-gray-100">
                             <img class="w-[30px]" src="./assets/Bangladesh-Railway.png" alt="">
@@ -161,7 +162,7 @@
                     </div>
                     <h1 class="text-xl font-bold mt-3">Bangladesh Railway</h1>
                     <p class=" text-[15px] text-[#5c5c5c]">Bangladesh Railway</p>
-                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">131</span> </h2>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number" class="card-num">131</span> </h2>
 
                     <p
                         class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">
@@ -169,7 +170,7 @@
 
                     <div class=" flex gap-5">
                         <button id=""
-                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
+                            class="copy-btn text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
                         <button id="raliways"
                             class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
@@ -179,7 +180,7 @@
                 </div>
 
                 <!-- Barck Bank -->
-                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                <div id="card" class="my-card border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
                     <div class="flex items-center justify-between">
                         <div class=" rounded-lg p-2 bg-pink-50">
                             <img class="w-[30px]" src="./assets/brac.png" alt="">
@@ -190,7 +191,7 @@
                     </div>
                     <h1 class="text-xl font-bold mt-3">BRAC Bank</h1>
                     <p class=" text-[15px] text-[#5c5c5c]">Brac Bank</p>
-                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">16221</span> </h2>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number" class="card-num">16221</span> </h2>
 
                     <p
                         class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">
@@ -198,7 +199,7 @@
 
                     <div class=" flex gap-5">
                         <button id=""
-                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
+                            class="copy-btn text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
                         <button id="brakcall"
                             class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
@@ -208,7 +209,7 @@
                 </div>
 
                 <!-- amdulance card -->
-                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                <div id="card" class="my-card border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
                     <div class="flex items-center justify-between">
                         <div class=" rounded-lg p-2 bg-red-100">
                             <img class="w-[30px]" src="./assets/ambulance.png" alt="">
@@ -219,7 +220,7 @@
                     </div>
                     <h1 class="text-xl font-bold mt-3">Ambulance</h1>
                     <p class=" text-[15px] text-[#5c5c5c]">Ambulance</p>
-                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">123456</span> </h2>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number" class="card-num">123456</span> </h2>
 
                     <p
                         class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">
@@ -227,7 +228,7 @@
 
                     <div class=" flex gap-5">
                         <button id=""
-                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
+                            class="copy-btn text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
                         <button id="amblounces"
                             class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i

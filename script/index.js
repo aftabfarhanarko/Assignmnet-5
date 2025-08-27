@@ -124,5 +124,22 @@ document
        })
   });
 
-   
+  
+  // Copy Buttons
+  let copyCounts = 0;
+  let copyCOuntsDisplay = document.getElementById('counts0').innerText;
+  document.getElementById('card-cointener').addEventListener('click',async function (e) {
+    if(!e.target.classList.contains('copy-btn')) return;
+
+    try{
+      const text = e.target.closest('.my-card').querySelector('.card-num').innerText.trim();
+      await navigator.clipboard.writeText(text);
+
+       document.getElementById('counts0').innerText = ++copyCounts;
+      alert(` Copy Now ${text}`);
+    }catch{
+      alert('❌Falide Copy');
+    }
+  
+  });
 
