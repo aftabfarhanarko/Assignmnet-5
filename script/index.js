@@ -1,62 +1,141 @@
-// Heart click Event
+const trangtionsData = [];
 
-// Fire Service Number Functions
-document.getElementById('fireService-btn').addEventListener('click', function () {
-    
-    alert( 'Calling Fire Service 102...')
-    
-    let points = parseInt(document.getElementById('point').innerText);
-     let ubdate = points - 20;
-    points.innerText = 
-    console.log(points);
+function hart(id) {
+  let element = document.getElementById(id);
+  let elementvalue = element.innerText;
+  let elementIntegerConvart = parseInt(elementvalue);
+
+  return elementIntegerConvart;
+}
+// hard-Ubdet-fire
+document.getElementById("like-noews").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+
+// hard-Ubdet-National
+document.getElementById("hard-2").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+
+// hard-Ubdet-Polic
+document.getElementById("hard-3").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+// hard-Ubdet-railway
+document.getElementById("hard-4").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+
+// hard-Ubdet-Brak
+document.getElementById("hard-5").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+
+// hard-Ubdet-Ambulance
+document.getElementById("hard-6").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+
+let coins = 100 ;
+let coneDisplay = document.getElementById('point-ofClick');
+coneDisplay.innerText = coins;
+
+//add all find element
+document.getElementById('alear').addEventListener('click', function (e) {
+
+    if(coins >= 20){
+      let values = coins - 20;
+      coins.innerText = values
+      alert('📞 Calling Fire Service 102...')
+    }else{
+      alert('❌আপনার বর্তমান কয়েন নেই কমপক্ষে কল করতে ২০ টি কয়েন লাগবে')
+    }
+
 })
-// National Emergency Service Number Functions
-document.getElementById('national-btn').addEventListener('click', function () {
-    
-    alert( 'Calling National Emergency Service 999...')
-    
-    let points = parseInt(document.getElementById('point').innerText);
-     let ubdate = points - 20;
-    points.innerText = 
-    console.log(points);
+document.getElementById('uational').addEventListener('click', function (e) {
+  alert('📞 Calling National Emergency Service 999...')
 })
-// Polic Service Number Functions
-document.getElementById('polic-btn').addEventListener('click', function () {
-    
-    alert( 'Calling Polic Service 102...')
-    
-    let points = parseInt(document.getElementById('point').innerText);
-     let ubdate = points - 20;
-    points.innerText = 
-    console.log(points);
+document.getElementById('polica').addEventListener('click', function (e) {
+  alert('📞 Calling Polic Service 999...')
 })
-// Bangladesh Railway Service Number Functions
-document.getElementById('railway-btn').addEventListener('click', function () {
-    
-    alert( 'Calling Bangladesh Railway Service 131...')
-    
-    let points = parseInt(document.getElementById('point').innerText);
-     let ubdate = points - 20;
-    points.innerText = 
-    console.log(points);
+document.getElementById('raliways').addEventListener('click', function (e) {
+  alert('📞 Calling Bangladesh Railway  Service 131...')
 })
-// BRAC Bank Service Number Functions
-document.getElementById('brakBank-btn').addEventListener('click', function () {
-    
-    alert( 'Calling BRAC Bank Service 16221...')
-    
-    let points = parseInt(document.getElementById('point').innerText);
-     let ubdate = points - 20;
-    points.innerText = 
-    console.log(points);
+
+document.getElementById('brakcall').addEventListener('click', function (e) {
+  alert('📞 Calling BRAC Bank Service 16221...')
 })
-// Ambulance Service Number Functions
-document.getElementById('ambulince-btn').addEventListener('click', function () {
-    
-    alert( 'Calling Ambulance Service 123456...')
-    
-    let points = parseInt(document.getElementById('point').innerText);
-     let ubdate = points - 20;
-    points.innerText = 
-    console.log(points);
+document.getElementById('amblounces').addEventListener('click', function (e) {
+  alert('📞 Calling Ambulance Service 123456...')
 })
+
+
+
+
+
+// Add Deleagitions
+document
+  .getElementById("card-cointener")
+  .addEventListener("click", function (e) {
+    if (e.target.className.includes("all-btn")) {
+      
+      let cardes = e.target;
+      let findName = cardes.parentNode.parentNode.children[1].innerText;
+
+      let findNumbers = parseInt(
+        cardes.parentNode.parentNode.children[3].innerText
+      );
+      console.log(findName, findNumbers);
+
+      // date time
+      const data = {
+        date:new Date().toLocaleTimeString()
+      };
+      // Creat Cointenar
+      let creatDivHiostrySections = document.getElementById("newaddesDiv");
+
+      let addesNewDives = document.createElement("newaddesDiv");
+
+      addesNewDives.innerHTML = ` 
+            <div class="flex justify-between items-center border-1 p-2 px-4 rounded-lg border-gray-200 bg-[#e8e6e6] mt-2 ">
+                        <div>
+                            <h3 class="text-[16px] font-bold">${findName}</h3>
+                            <p class="mt-2 text-[16px] font-bold">${findNumbers}</p>
+                        </div>
+
+                        <div>
+                             <h2 class="">${data.date}</h2>
+                        </div>
+                    </div>
+        `;
+      creatDivHiostrySections.appendChild(addesNewDives);
+     
+    }
+    // Clear Btn Click And Removed All History
+     document.getElementById('clears').addEventListener('click', function (e) {
+        e.preventDefault();
+         document.getElementById("newaddesDiv").innerText = "";
+        console.log('Find Clear Btn');
+       })
+  });
+
+   
+

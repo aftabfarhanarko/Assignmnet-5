@@ -29,12 +29,12 @@
             </div>
 
             <div class="flex gap-5 mt-5 md:mt-0">
-                <div class="flex items-center gap-2 rounded-full bg-[#41ff6b1a] px-4 ">
-                    <h2 class="font-bold">0</h2>
+                <div id="link-now" class="flex items-center gap-2 rounded-full bg-[#41ff6b1a] px-4 ">
+                    <h2 class="font-bold" id="hard-count">0</h2>
                     <img class="w-[30px]" src="./assets/heart.png" alt="">
                 </div>
                 <div class="flex items-center gap-2 rounded-full bg-[#41ff6b1a] px-4 py-2">
-                    <h2 class="font-bold" id="point">100</h2>
+                    <h2 class="font-bold" id="point-ofClick"></h2>
                     <img class="w-[30px]" src="./assets/coin.png" alt="">
                 </div>
                 <div class="flex items-center bg-[#00a63e] rounded-full px-5">
@@ -58,16 +58,17 @@
     <!-- main card sections -->
     <section class=" bg-[#e0dfdf] ">
 
-        <div class="w-12/14 mx-auto grid grid-cols-14 gap-8 ">
+        <div class="w-12/14 mx-auto grid grid-cols-14 gap-8 h-[70vh]">
+
             <div id="card-cointener" class="col-span-10 mt-5 p-2 px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
 
                 <!-- Fire Service Card -->
-                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                <div id="fireCard" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg ">
                     <div class="flex items-center justify-between">
                         <div class=" rounded-lg p-2 bg-red-100">
                             <img class="w-[30px]" src="./assets/fire-service.png" alt="">
                         </div>
-                        <div class="text-2xl">
+                        <div class="text-2xl" id="like-noews">
                             <i class="ri-heart-3-line"></i>
                         </div>
                     </div>
@@ -77,14 +78,14 @@
 
                     <p
                         class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">
-                     Free</p>
+                        Free</p>
 
                     <div class=" flex gap-5">
                         <button id=""
                             class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
-                        <button id="fireService-btn"
-                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black">
+                        <button id="alear"
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn">
                             <i class="ri-phone-line"></i> Call</button>
 
                     </div>
@@ -96,7 +97,7 @@
                         <div class=" rounded-lg p-2 bg-red-100">
                             <img class="w-[30px]" src="./assets/emergency.png" alt="">
                         </div>
-                        <div class="text-2xl">
+                        <div class="text-2xl " id="hard-2">
                             <i class="ri-heart-3-line"></i>
                         </div>
                     </div>
@@ -112,8 +113,8 @@
                         <button id=""
                             class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
-                        <button id="national-btn"
-                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black"><i
+                        <button id="uational"
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
                                 class="ri-phone-line"></i> Call</button>
 
                     </div>
@@ -125,7 +126,7 @@
                         <div class=" rounded-lg p-2 bg-blue-100">
                             <img class="w-[30px]" src="./assets/police.png" alt="">
                         </div>
-                        <div class="text-2xl">
+                        <div class="text-2xl" id="hard-3">
                             <i class="ri-heart-3-line"></i>
                         </div>
                     </div>
@@ -141,8 +142,8 @@
                         <button id=""
                             class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
-                        <button id="polic-btn"
-                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black"><i
+                        <button id="polica"
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
                                 class="ri-phone-line"></i> Call</button>
 
                     </div>
@@ -154,7 +155,7 @@
                         <div class=" rounded-lg p-2 bg-gray-100">
                             <img class="w-[30px]" src="./assets/Bangladesh-Railway.png" alt="">
                         </div>
-                        <div class="text-2xl">
+                        <div class="text-2xl" id="hard-4">
                             <i class="ri-heart-3-line"></i>
                         </div>
                     </div>
@@ -170,8 +171,8 @@
                         <button id=""
                             class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
-                        <button id="railway-btn"
-                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black"><i
+                        <button id="raliways"
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
                                 class="ri-phone-line"></i> Call</button>
 
                     </div>
@@ -183,7 +184,7 @@
                         <div class=" rounded-lg p-2 bg-pink-50">
                             <img class="w-[30px]" src="./assets/brac.png" alt="">
                         </div>
-                        <div class="text-2xl">
+                        <div class="text-2xl" id="hard-5">
                             <i class="ri-heart-3-line"></i>
                         </div>
                     </div>
@@ -199,8 +200,8 @@
                         <button id=""
                             class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
-                        <button id="brakBank-btn"
-                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black"><i
+                        <button id="brakcall"
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
                                 class="ri-phone-line"></i> Call</button>
 
                     </div>
@@ -212,7 +213,7 @@
                         <div class=" rounded-lg p-2 bg-red-100">
                             <img class="w-[30px]" src="./assets/ambulance.png" alt="">
                         </div>
-                        <div class="text-2xl">
+                        <div class="text-2xl" id="hard-6">
                             <i class="ri-heart-3-line"></i>
                         </div>
                     </div>
@@ -228,8 +229,8 @@
                         <button id=""
                             class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i
                                 class="ri-file-copy-line"></i> Copy</button>
-                        <button id="ambulince-btn"
-                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black"><i
+                        <button id="amblounces"
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold hover:bg-gray-300 hover:text-black all-btn"><i
                                 class="ri-phone-line"></i> Call</button>
 
                     </div>
@@ -239,19 +240,19 @@
 
 
 
-            <aside class="bg-[#FFFFFF] col-span-4 mt-5 rounded-lg p-4 px-6">
-                <div class=" md:flex justify-between items-center">
+            <aside id="" class="bg-[#FFFFFF] col-span-4 mt-5 rounded-lg p-4 px-6">
+                <div id="clears" class=" md:flex justify-between items-center">
                     <div class="flex gap-2 text-xl">
                         <i class="ri-time-line"></i>
                         <h2 class="font-bold">Call History</h2>
                     </div>
                     <div class="flex  bg-[#00a63e] rounded-full px-5 py-2 ">
-                        <h2 class="font-bold text-white  text-[18px]">Clear</h2>
+                        <h2  class="font-bold text-white  text-[18px]">Clear</h2>
                     </div>
                 </div>
                 <!-- Creat Div -->
 
-                <div>
+                <div id="newaddesDiv">
 
                 </div>
             </aside>
