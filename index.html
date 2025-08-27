@@ -17,36 +17,272 @@
     <!-- remix Icon CDN -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Fabicone Icone -->
-     <link rel="shortcut icon" href="./assets/Bangladesh-Railway.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/Bangladesh-Railway.png" type="image/x-icon">
 </head>
 
 <body class="manrope-font">
-   <header>
-      <nav class="flex justify-between px-10 py-4 border-2 items-center">
-           <div class="flex gap-4 items-center">
-            <img class="w-[50px]" src="./assets/logo.png" alt="">
-            <h2 class="text-[18px] font-bold text-[#006747]">Emergency <br> Service</h2>
-           </div>
+    <header>
+        <nav class="flex flex-col md:flex-row justify-between px-10 py-4 border-2 items-center">
+            <div class="flex gap-4 items-center">
+                <img class="w-[70px]  md:w-[50px]" src="./assets/logo.png" alt="">
+                <h2 class="text-[18px] font-extrabold text-[#006747]">Emergency <br> Service</h2>
+            </div>
 
-           <div class="flex gap-5">
-               <div class="flex items-center gap-2 rounded-full bg-[#41ff6b1a] px-4 ">
-                 <h2 class="font-bold">0</h2>
-                 <img class="w-[30px]" src="./assets/heart.png" alt="">
-               </div>
-               <div class="flex items-center gap-2 rounded-full bg-[#41ff6b1a] px-4 py-2">
-                   <h2 class="font-bold" id="">100</h2>
-                   <img class="w-[30px]" src="./assets/coin.png" alt="">
-               </div>
-               <div class="flex items-center bg-[#00a63e] rounded-full px-5" >
-                     <h2 class="font-bold text-white  text-[18px]"><span id="">0</span> Copy</h2>
-               </div>
-           </div>
-      </nav>
-   </header>
-   
+            <div class="flex gap-5 mt-5 md:mt-0">
+                <div class="flex items-center gap-2 rounded-full bg-[#41ff6b1a] px-4 ">
+                    <h2 class="font-bold">0</h2>
+                    <img class="w-[30px]" src="./assets/heart.png" alt="">
+                </div>
+                <div class="flex items-center gap-2 rounded-full bg-[#41ff6b1a] px-4 py-2">
+                    <h2 class="font-bold" id="">100</h2>
+                    <img class="w-[30px]" src="./assets/coin.png" alt="">
+                </div>
+                <div class="flex items-center bg-[#00a63e] rounded-full px-5">
+                    <h2 class="font-bold text-white  text-[18px]"><span id="">0</span> Copy</h2>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Sections -->
+        <!-- grident er kaj bakie --- bg-gradient-to-b  to-[#003d24] -->
+        <section class="bg-[#003d24] text-white flex mx-auto justify-center text-center py-5">
+            <div class="px-5 md:PX-0">
+                <img class="w-[100px] mx-auto" src="./assets/logo-dark.png" alt="">
+                <h1 class="text-2xl font-bold mt-3">Emergency Service Directory </h1>
+                <p class="mt-3">Government Emergency Services at Your Fingertip – A Project by Government of the
+                    People’s Republic of Bangladesh</p>
+            </div>
+        </section>
+    </header>
+
+    <!-- main card sections -->
+    <section class=" bg-[#e0dfdf] ">
+
+        <div class="w-12/14 mx-auto grid grid-cols-14 gap-8">
+            <div id="card-cointener" class="col-span-10 mt-5 border-2 p-2 px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+                <div id="card" class="border-1 border-gray-300 p-6  rounded-lg bg-[#FFFFFF] shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div class=" rounded-lg p-2 bg-red-100">
+                            <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold mt-3">Boro Text</h1>
+                    <p class=" text-[15px] text-[#5c5c5c]">sub title</p>
+                    <h2 class="text-xl font-extrabold mt-3"> <span id="call-number">999</span> </h2>
+
+                    <p class="border-1 border-gray-400 rounded-full w-[50px] px-3  mt-1 text-[15px] text-[#5c5c5c] bg-gray-100">Free</p>
+
+                    <div class=" flex gap-5">
+                        <button id=""
+                            class=" text-[13px] p-1 text-[#8b8b8b]  btn-active btn-primary w-full mt-8 rounded-lg border-1 hover:bg-black hover:text-white"><i class="ri-file-copy-line"></i> Copy</button>
+                        <button id=""
+                            class=" text-[15px] p-1 text-white bg-[#00a63e] btn-active btn-primary w-full mt-8 rounded-lg font-semibold"><i class="ri-phone-line"></i> Call</button>
+
+                    </div>
+                </div>
+
+               
+
+               
+            </div>
+
+
+            <!-- #5c5c5c -->
+
+            <div class="bg-gray-600 col-span-4 mt-5">wef</div>
+        </div>
+    </section>
 
     <!-- Adds Js Files -->
-   <script src="./script/index.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
