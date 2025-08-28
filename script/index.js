@@ -1,12 +1,13 @@
 
+
 function hart(id) {
   let element = document.getElementById(id);
   let elementvalue = element.innerText;
   let elementIntegerConvart = parseInt(elementvalue);
   return elementIntegerConvart;
 }
-// hard-Ubdet-fire
-document.getElementById("like-noews").addEventListener("click", function (e) {
+// hard-Ubdet-fire 
+document.getElementById("firesCounts").addEventListener("click", function (e) {
   e.preventDefault();
   let likeNumbers = hart("hard-count");
   likeNumbers++;
@@ -60,31 +61,11 @@ coneDisplay.innerText = coins;
 document.getElementById('card-cointener').addEventListener('click', function (e) {
    e.preventDefault();
  if (e.target.className.includes("all-btn")) {
-     let cardes = e.target;
-      let findName = cardes.parentNode.parentNode.children[1].innerText;
-
-      let findNumbers = parseInt(
-        cardes.parentNode.parentNode.children[3].innerText
-      );
-
+     
     if(coins >= 20){
       coins = coins - 20;
       coneDisplay.innerText = coins;
-      alert(` 📞 Calling ${findName} Service ${findNumbers}...` )
-    }else{
-      alert('❌আপনার বর্তমান কয়েন নেই কমপক্ষে কল করতে ২০ টি কয়েন লাগবে')
-    }
-  }
-
-});
-
-
-// Add Deleagitions With Cointener
-document
-  .getElementById("card-cointener")
-  .addEventListener("click", function (e) {
-    if (e.target.className.includes("all-btn")) {
-      
+     
       let cardes = e.target;
       let findName = cardes.parentNode.parentNode.children[1].innerText;
 
@@ -114,17 +95,21 @@ document
                     </div>
         `;
       creatDivHiostrySections.appendChild(addesNewDives);
-     
+       alert(` 📞 Calling ${findName} Service ${findNumbers}...` );
+    }else{
+      alert('❌আপনার বর্তমান কয়েন নেই কমপক্ষে কল করতে ২০ টি কয়েন লাগবে')
     }
-    // Clear Btn Click And Removed All History
-     document.getElementById('clears').addEventListener('click', function (e) {
-        e.preventDefault();
-         document.getElementById("newaddesDiv").innerText = "";
-        console.log('Find Clear Btn');
-       })
-  });
+  }
 
-  
+});
+
+  // Clear Btn Click And Removed All History
+  document.getElementById('clears').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById("newaddesDiv").innerText = "";
+    
+ })
+
   // Copy Buttons
   let copyCounts = 0;
   let copyCOuntsDisplay = document.getElementById('counts0').innerText;
