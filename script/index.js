@@ -53,11 +53,36 @@ document.getElementById("hard-6").addEventListener("click", function (e) {
   document.getElementById("hard-count").innerText = likeNumbers;
 });
 
+
+
+// hard-Ubdet-Ambulance
+document.getElementById("hard-7").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+// hard-Ubdet-Ambulance
+document.getElementById("hard-8").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+// hard-Ubdet-Ambulance
+document.getElementById("hard-9").addEventListener("click", function (e) {
+  e.preventDefault();
+  let likeNumbers = hart("hard-count");
+  likeNumbers++;
+  document.getElementById("hard-count").innerText = likeNumbers;
+});
+
+
+//add all find element
+
 let coins = 100 ;
 let coneDisplay = document.getElementById('point-ofClick');
 coneDisplay.innerText = coins;
-
-//add all find element
 document.getElementById('card-cointener').addEventListener('click', function (e) {
    e.preventDefault();
  if (e.target.className.includes("all-btn")) {
